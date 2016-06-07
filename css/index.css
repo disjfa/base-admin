@@ -8794,7 +8794,22 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 .sidebar .nav-link {
-  padding: .425rem;
+  color: #AAA;
+  display: block;
+  padding: 0.5rem;
+  position: relative;
+}
+.sidebar .sidebar-sub > .nav-link:after {
+  content: "\f053";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  transform: rotate(-90deg);
+  transition: transform .2s;
+}
+.sidebar .sidebar-sub > .nav-link.collapsed:after {
+  transform: rotate(0deg);
 }
 
 /*# sourceMappingURL=index.css.map */

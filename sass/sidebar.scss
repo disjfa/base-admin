@@ -1,5 +1,26 @@
 .sidebar {
     .nav-link {
-        padding:    .425rem;
+        color: #AAA;
+        display: block;
+        padding: $spacer / 2 ;
+        position: relative;
+    }
+    .sidebar-sub {
+        > .nav-link {
+            &:after {
+                content: "\f053";
+                font-family: FontAwesome;
+                position: absolute;
+                right: $spacer / 2;
+                top: $spacer / 2;
+                transform: rotate(-90deg);
+                transition: transform .2s;
+            }
+            &.collapsed {
+                &:after {
+                    transform: rotate(0deg);
+                }
+            }
+        }
     }
 }
