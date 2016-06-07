@@ -1,0 +1,9 @@
+files:
+    include: 'sass/**/*.css.scss'
+options:
+    formatter: stylish
+    merge-default-rules: true
+rules:
+    indentation:
+        - 1
+        - size: 4
